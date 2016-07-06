@@ -2,24 +2,24 @@
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
-  transition: background-color .1s linear;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
-  font-size: 20px;
-  line-height: 39px;
-  background-color: $yellow;
-  color: #000;
-  padding: 22px 90px;
-  outline: none;
-  border: none;
-  &:hover {
-    background-color: #ffca28;
-  }
 
-  &--as {
-    margin-left: 10%;
-    margin-top: 4%;
+  &--default {
+    display: inline-block;
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 200px;
+    background-color: #7850dc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    vertical-align: top;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    margin-top: 35px;
+    margin-bottom: 100px;
   }
-
 }
