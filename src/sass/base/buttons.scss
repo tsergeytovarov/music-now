@@ -1,0 +1,25 @@
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color .1s linear;
+  text-align: center;
+  vertical-align: top;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 39px;
+  background-color: $yellow;
+  color: #000;
+  padding: 22px 90px;
+  outline: none;
+  border: none;
+  &:hover {
+    background-color: #ffca28;
+  }
+
+  &--as {
+    margin-left: 10%;
+    margin-top: 4%;
+  }
+
+}
