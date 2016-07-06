@@ -83,6 +83,11 @@
 
 .header {
   text-align: left;
+
+  &--dark {
+    background-color: #282832;
+    padding: 35px 0;
+  }
 }
 
 .logo {
