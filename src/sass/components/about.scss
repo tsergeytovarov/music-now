@@ -220,6 +220,9 @@
   height: 152px;
   margin-bottom: 25px;
   position: relative;
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
 
   &__date {
     font-size: 11px;
