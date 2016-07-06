@@ -85,8 +85,8 @@
   text-align: left;
 
   &--dark {
-    background-color: #282832;
     padding: 35px 0;
+    background-color: #282832;
   }
 }
 
@@ -454,6 +454,55 @@
 
     @media (max-width: 768px) {
       text-align: center;
+    }
+  }
+}
+
+.page {
+  padding: 110px 0 10px;
+
+  &__title {
+    color: #05143c;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+
+    + p {
+      text-align: center;
+      font-size: 26px;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__section {
+    padding-bottom: 100px;
+
+    h3 {
+      color: #05143c;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 600;
+      line-height: 1.2;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 25px;
+    }
+
+    ul {
+      color: #8c91a0;
+      padding-left: 20px;
+    }
+
+    li {
+      font-size: 18px;
+      line-height: 32px;
+      color: #8c91a0;
     }
   }
 }
