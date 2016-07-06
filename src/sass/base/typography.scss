@@ -2,15 +2,14 @@
   Базовая типография
 =====================*/
 
-$roboto: "Roboto", Arial, sans-serif;
-
+$roboto: 'Open Sans', Arial, sans-serif;
 
 
 body {
-  color: #000000;
+  color: #8c91a0;
   font-family: $roboto;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 400;
 }
 
