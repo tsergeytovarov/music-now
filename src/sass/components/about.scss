@@ -505,6 +505,19 @@
       color: #8c91a0;
     }
   }
+
+  &__feature {
+    display: flex;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 850px;
+    margin: 0 auto;
+
+    .feature {
+      width: 220px;
+    }
+  }
 }
 
 .panel {
