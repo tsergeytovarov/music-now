@@ -2,6 +2,21 @@
   width: 1240px;
   margin: 0 auto;
   padding: 10px;
+
+  @media (max-width: 1240px) {
+    width: 1024px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 768px;
+  }
+
+  @media (max-width: 768px) {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 320px;
+    max-width: 768px;
+  }
 }
 
 .promo {
@@ -12,6 +27,14 @@
   background-size: cover;
   text-align: center;
 
+  @media (max-width: 1024px) {
+    padding: 30px 0 100px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 0 40px;
+  }
+
   &__title {
     margin: 0;
     margin-top: 190px;
@@ -21,6 +44,18 @@
     font-size: 60px;
     font-weight: 600;
     line-height: 1.2;
+
+    @media (max-width: 1024px) {
+      margin-top: 100px;
+      margin-bottom: 40px;
+      font-size: 48px;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 30px;
+    }
   }
 
   &__btn {
@@ -53,6 +88,12 @@
 .logo {
   float: left;
 
+  @media (max-width: 768px) {
+    float: none;
+    width: 196px;
+    margin: 0 auto;
+  }
+
   img {
     display: block;
   }
@@ -61,6 +102,12 @@
 .menu {
   float: right;
   text-align: right;
+
+  @media (max-width: 768px) {
+    float: none;
+    margin-top: 20px;
+    text-align: center;
+  }
 
   &__list {
     margin: 0;
@@ -79,6 +126,12 @@
     &:last-child {
       margin-right: 0;
     }
+
+    @media (max-width: 768px) {
+      display: block;
+      margin-right: 0;
+      text-align: center;
+    }
   }
 
   &__link {
@@ -88,6 +141,11 @@
     color: #c8cdd2;
     text-decoration: none;
     font-weight: 400;
+
+    @media (max-width: 768px) {
+      display: inline-block;
+      vertical-align: top;
+    }
 
     &--active {
       color: #ffffff;
@@ -110,8 +168,17 @@
 .features {
   padding: 110px 0;
 
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+
   .container {
     display: flex;
+
+    @media (max-width: 1024px) {
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 }
 
@@ -124,6 +191,11 @@
   font-size: 48px;
   font-weight: 600;
   line-height: 1.2;
+
+  @media (max-width: 768px) {
+    padding-bottom: 30px;
+    font-size: 26px;
+  }
 }
 
 .feature {
@@ -131,6 +203,14 @@
   width: 20%;
   padding: 15px;
   text-align: center;
+
+  @media (max-width: 1024px) {
+    width: 33.333333%;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   &__image {
     min-height: 64px;
@@ -166,9 +246,19 @@
 .sort {
   margin-bottom: 60px;
 
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+
   &__form {
     float: right;
     width: 160px;
+
+    @media (max-width: 768px) {
+      float: none;
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
 
   &__list {
@@ -186,6 +276,14 @@
     font-size: 16px;
     font-weight: 600;
     line-height: 1.2;
+
+    @media (max-width: 1024px) {
+      margin-right: 7px;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 15px;
+    }
   }
 
   &__link {
@@ -198,6 +296,10 @@
     font-size: 12px;
     font-weight: 400;
     line-height: 12px;
+
+    @media (max-width: 1024px) {
+      padding: 10px 10px;
+    }
 
     &:hover {
       opacity: 0.8;
@@ -214,6 +316,10 @@
 
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (max-width: 1240px) {
+    justify-content: space-around;
+  }
 }
 
 .card {
@@ -271,12 +377,20 @@
   padding: 35px 0;
   background-color: #282832;
 
+  @media (max-width: 768px) {
+    padding: 25px 0;
+  }
+
   &__right {
     text-align: right;
   }
 
   &__descr {
     color: transparentize(#c8cdd2, 0.6);
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
 
     a {
       color: #c8cdd2;
@@ -298,6 +412,11 @@
     margin: 0;
     padding-right: 30px;
 
+    @media (max-width: 768px) {
+      margin-bottom: 20px;
+      padding-right: 0;
+    }
+
     &:last-child {
       padding-right: 0;
 
@@ -314,6 +433,10 @@
       height: 20px;
       background-color: #c8cdd2;
       content: "";
+
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
 
@@ -323,5 +446,9 @@
     color: #c8cdd2;
     font-size: 18px;
     line-height: 18px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 }
