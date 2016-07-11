@@ -311,6 +311,12 @@
     &:hover {
       opacity: 0.8;
     }
+
+    &:active {
+      opacity: 1;
+      border: 1px solid darken(#8c91a0, 15%);
+      color: darken(#8c91a0, 15%);
+    }
   }
 }
 
