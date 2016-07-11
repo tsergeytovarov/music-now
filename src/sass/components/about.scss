@@ -1,8 +1,8 @@
 .container {
+  box-sizing: border-box;
   width: 1240px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box;
 
   @media (max-width: 1240px) {
     width: 1024px;
@@ -313,9 +313,9 @@
     }
 
     &:active {
-      opacity: 1;
       border: 1px solid darken(#8c91a0, 15%);
       color: darken(#8c91a0, 15%);
+      opacity: 1;
     }
   }
 }
@@ -354,6 +354,25 @@
     color: #ffffff;
     font-size: 11px;
     font-weight: 600;
+  }
+
+  &__live {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+
+    &::before {
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      margin-right: 7px;
+      border-radius: 50%;
+      background-color: #f05050;
+      content: "";
+      vertical-align: baseline;
+    }
   }
 
   &__person {
