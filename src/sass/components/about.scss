@@ -580,7 +580,11 @@
 
       @media (max-width: 768px) {
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 10px;
+
+        .feature__image {
+          margin-bottom: 10px;
+        }
       }
     }
   }
